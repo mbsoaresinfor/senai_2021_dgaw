@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class WelcomeRestController {
 
+	// classe de REST controle 
 	
 	@RequestMapping(value = "/hello", method = RequestMethod.GET, produces="application/json")	 
 	  public String hello() {
