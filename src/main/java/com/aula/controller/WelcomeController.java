@@ -16,6 +16,11 @@ public class WelcomeController {
 		model.addAttribute("name", name);
 		return "welcome";
 	}
+	
+	@RequestMapping(value = "/produtos", method = RequestMethod.GET)
+	public String bemVindo( Model model) {		
+		return "produtos";
+	}
 
 	
 }

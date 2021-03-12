@@ -12,7 +12,7 @@ public class SpringBootFirstWebApplication {
 	// classe para iniciar o projeto.
 	
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootFirstWebApplication.class, args);
+		SpringApplication.run(SpringBootFirstWebApplication.class, args);		
 	}	
 	
 }
