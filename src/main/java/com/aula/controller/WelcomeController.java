@@ -36,6 +36,16 @@ public class WelcomeController {
 	public String hello3( Model model) {		
 		return "hello3";
 	}
+	
+	@RequestMapping(value = "/formulario4", method = RequestMethod.GET)
+	public String formulario4( Model model) {		
+		return "formulario4";
+	}
+	
+	@RequestMapping(value = "/cadastraForm4", method = RequestMethod.POST)
+	public String cadastraForm4( Model model) {		
+		return "cadastraForm4";
+	}
 
 	
 }

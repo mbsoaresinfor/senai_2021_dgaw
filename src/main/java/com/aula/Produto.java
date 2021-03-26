@@ -2,7 +2,7 @@ package com.aula;
 
 public class Produto {
 
-	String nome;
-	float preco;
+	public String nome;
+	public float preco;
 	
 }

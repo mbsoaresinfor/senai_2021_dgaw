@@ -17,7 +17,7 @@
 	// PEGA AS INFOMRACOES DA TELA
 	// CRIA O OBJETO
 	Produto produto = new Produto();
-	
+	String a = a.length()
 	// SALVA NA LISTA
 
 	// MOSTRA A LISTA NUMA TABELA.

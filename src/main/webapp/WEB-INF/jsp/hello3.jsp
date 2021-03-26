@@ -14,8 +14,11 @@ HELLO3
 	// CODIGO JSP
 	String nome = request.getParameter("nome");
 	out.println("O valor do parametro nome é: " + nome);
-
-
+// REQUEST 1
+	 CHAMA PAGINA 1 (NOME)
+			CHAMA PAGINA 2
+					CHAMA PAGINA 3 NOME
+ // FIM REQUEST 1 (MORRE VARIAVEL NOME)
 %>
 
 </body>
