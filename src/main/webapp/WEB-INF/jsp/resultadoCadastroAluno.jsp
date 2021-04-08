@@ -4,11 +4,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Resultado da calculaodora</title>
+<title>Resultado da Cadastro Aluno</title>
 </head>
 <body>
 
-O resultado foi:  ${abc}
+${error}
+
+<table border=1>
+<tr>
+<td>${nome}</td><td>${idade}</td>
+</tr>
+</table>
 
 
 </body>

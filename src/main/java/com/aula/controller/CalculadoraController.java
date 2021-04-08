@@ -29,7 +29,7 @@ public class CalculadoraController {
 		Float valor1Float = Float.parseFloat(valor1);
 		Float valor2Float = Float.parseFloat(valor2);
 		Float resultado = calc.calcular(valor1Float, valor2Float, operacao);
-		model.addAttribute("resultado", resultado);
+		model.addAttribute("abc", resultado);
 		
 		// VIEW
 		return "mostraCalculo";
