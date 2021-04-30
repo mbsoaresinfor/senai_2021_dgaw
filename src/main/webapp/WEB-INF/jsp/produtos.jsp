@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	import="java.util.*"
+	import="java.util.*,com.aula.negocio.FuncionarioServico"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
@@ -10,6 +10,17 @@
 <body>
 
 	<%
+		FuncionarioServico servico = new FuncionarioServico();
+		ArrayList<String> listaFuncionarios = servico.listar();
+	
+		for(String funcionario : listaFuncionarios){
+			out.println("<tr>");
+				out.println("<td>");
+				out.println(funcionario);
+				out.println("</td>");
+			out.println("</tr>");
+		}
+		
 		// aqui é jsp.
 		List<String> listaProdutos = new ArrayList<String>();
 		listaProdutos.add("tv");
