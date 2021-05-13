@@ -31,6 +31,16 @@ public class AlunoController {
 		return "resultadoCadastroAluno";
 	}
 	
+	@RequestMapping(value = "/exemplo_angular_js", method = RequestMethod.GET)
+	public String exemplo_angular_js( Model model) {		
+		return "exemplo_angular_js";
+	}
+	
+	@RequestMapping(value = "/dados", method = RequestMethod.GET)
+	public String dados( Model model) {		
+		return "dados";
+	}
+	
 	
 	
 }

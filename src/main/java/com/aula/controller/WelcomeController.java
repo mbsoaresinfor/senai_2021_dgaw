@@ -46,6 +46,8 @@ public class WelcomeController {
 	public String cadastraForm4( Model model) {		
 		return "cadastraForm4";
 	}
+	
+	
 
 	
 }
