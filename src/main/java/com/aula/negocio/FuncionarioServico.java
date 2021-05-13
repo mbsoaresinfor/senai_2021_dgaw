@@ -10,6 +10,9 @@ public class FuncionarioServico {
 	
 	public void salvar(String nome) {
 		// implementacoes
+		if(nome.equals("")) {
+			return;
+		}
 		repositorio.salvar(nome);
 	}
 	
