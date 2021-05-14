@@ -42,5 +42,16 @@ public class AlunoController {
 	}
 	
 	
+	@RequestMapping(value = "/exercicio_angular", method = RequestMethod.GET)
+	public String exercicio_angular( Model model) {		
+		return "exercicio_angular";
+	}
+	
+	@RequestMapping(value = "/dados_exercicio", method = RequestMethod.GET)
+	public String dados_exercicio( Model model) {		
+		return "dados_exercicio";
+	}
+	
+	
 	
 }

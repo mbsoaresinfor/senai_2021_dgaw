@@ -109,6 +109,7 @@ Você está digitando a cidade: {{records.cidade }}
 
 <button ng-click="buscaDados()">Busca dados via GET no servidor</button> 
 <br>
+o retorno da busca foi:
 {{dados}}
 
 </div>

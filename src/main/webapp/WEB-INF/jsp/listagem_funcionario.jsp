@@ -21,9 +21,15 @@
 		
 		ArrayList<String> listaFuncionarios = servico.listar();
 	
+		out.println("<table border=1>");
 		for(String funcionario : listaFuncionarios){
+			out.println("<tr>");
+			out.println("<td>");
 				out.println(funcionario);
+				out.println("</td>");
+				out.println("</tr>");
 		}
+		out.println("</table>");
 		
 	
 	%>
