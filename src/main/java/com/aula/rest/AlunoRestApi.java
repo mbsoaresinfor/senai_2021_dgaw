@@ -1,6 +1,7 @@
 package com.aula.rest;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.aula.modelos.AlunoModelo;
+
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 public class AlunoRestApi {
@@ -27,11 +30,13 @@ public class AlunoRestApi {
 		listaAluno.add(aluno2);
 	}
 	
+	@ApiOperation(value = "Lista os alunos", response = List.class)
 	@RequestMapping(value= "/alunos", method=RequestMethod.GET, produces = "application/json")
 	public ArrayList<AlunoModelo> retornaTodosAlunos(){
 		return listaAluno;
 	}
 	
+	@ApiOperation(value = "Busca um aluno pelo id", response = AlunoModelo.class)
 	@RequestMapping(value= "/alunos/{id}", method=RequestMethod.GET, produces = "application/json")
 	public AlunoModelo retornaAluno(@PathVariable("id") Integer id) {
 		try {

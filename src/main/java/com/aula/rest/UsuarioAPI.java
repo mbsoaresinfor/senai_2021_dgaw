@@ -1,6 +1,7 @@
 package com.aula.rest;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -14,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.aula.modelos.UsuarioModelo;
 import com.aula.negocio.UsuarioServico;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 public class UsuarioAPI {
 
@@ -21,6 +24,7 @@ public class UsuarioAPI {
 	@Autowired
 	UsuarioServico servico;
 	
+	@ApiOperation(value = "Salva um usuario no sistema", response = ResponseEntity.class)
 	@RequestMapping(value= "/usuarios", method=RequestMethod.POST, produces = "application/json")
 	public ResponseEntity<Integer> salvar(@RequestBody UsuarioModelo usuario){		
 		return new ResponseEntity<>(servico.salvar(usuario),HttpStatus.OK);		
